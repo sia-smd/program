@@ -1,6 +1,13 @@
+
+
+var dis = document.getElementById("display1").innerText; 
+
 function clicks(X) {
     var X;
-    var dis = document.getElementById("display").innerText;
     dis = dis * 10 + X;
-    document.getElementById("display").innerText = dis;
+    document.getElementById("display1").innerText = dis;
+  }
+
+  function show(){
+      
   }
