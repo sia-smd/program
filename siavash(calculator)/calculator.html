@@ -1,18 +1,37 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
+  <head>
+    <meta charset="UTF-8" />
+
     <title>siavash_calculator</title>
-    <link rel="stylesheet" href="/siavash(calculator)/css/bootstrap.css">
-</head>
-<body>
-   
+    <link rel="stylesheet" href="/siavash(calculator)/css/bootstrap.css" />
+  </head>
+  <body>
+    <div style="text-align: center;">
+        <p id="display">0</p>
+      <button class="btn btn-dark" onclick="clicks(1)">1</button>
+      <button class="btn btn-dark" onclick="clicks(2)">2</button>
+      <button class="btn btn-dark" onclick="clicks(3)">3</button>
+      <br />
+      <button class="btn btn-dark" onclick="clicks(4)">4</button>
+      <button class="btn btn-dark" onclick="clicks(5)">5</button>
+      <button class="btn btn-dark" onclick="clicks(6)">6</button>
+      <br />
+      <button class="btn btn-dark" onclick="clicks(7)">7</button>
+      <button class="btn btn-dark" onclick="clicks(8)">8</button>
+      <button class="btn btn-dark" onclick="clicks(9)">9</button>
+      <br />
+      <button class="btn btn-dark" onclick="clicks(0)">0</button>
+      <button
+        class="btn btn-outline-dark"
+        onclick="document.getElementById('display').innerText = 0"
+      >
+        C
+      </button>
 
-
-
-
-
+      
+    </div>
     
-</body>
-<script src="/siavash(calculator)/js/calculator.js"></script>
+  </body>
+
+  <script src="/siavash(calculator)/js/calculator.js"></script>
 </html>
