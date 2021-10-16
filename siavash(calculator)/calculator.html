@@ -7,37 +7,36 @@
     <link rel="stylesheet" href="/siavash(calculator)/css/style.css" />
   </head>
   <body>
+      <button onclick="show()">show</button>
+      <button onclick="change()">change</button>
     <p style="text-align: center; font-size: xx-large">Calculator</p>
-    <div class="container-fluid">
-      <div class="m-auto  col-3 bg-primary bg-opacity-10 border rounded-3 border-3 border-dark">
+    <div class="container-fluid" >
+      <div class="m-auto pt-3  col-3 bg-primary bg-opacity-10 border rounded-3 border-3 border-dark">
       <div class="m-auto disp"><p id="display2"></p></div>
       <div class="m-auto disp"  style="font-size: 40px;"><strong><P id="display1">0</P></strong></div>
       <div class="m-auto mt-1 text-center ">
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(1)">1</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(2)">2</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(3)">3</button>
-        <button class="btn btn-lg btn-primary sizebtn" onclick="">*</button>
+        <button class="btn btn-lg btn-primary sizebtn" onclick="act(1)">+</button>
       </div>
       <div class="m-auto mt-1 text-center ">
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(4)">4</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(5)">5</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(6)">6</button>
-        <button class="btn btn-lg btn-primary sizebtn" onclick="">/</button>
+        <button class="btn btn-lg btn-primary sizebtn" onclick="act(2)">-</button>
       </div>
       <div class="m-auto mt-1 text-center ">
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(7)">7</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(8)">8</button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(9)">9</button>
-        <button class="btn btn-lg btn-primary sizebtn" onclick="sum()">+</button>
+        <button class="btn btn-lg btn-primary sizebtn" onclick="act(3)">X</button>
       </div>
       <div class="m-auto  mt-1 text-center" style="padding-bottom: 20px;">
-        <button
-          class="btn btn-lg btn-outline-primary sizebtn"
-          onclick="document.getElementById('display1').innerText = 0">
-         <strong>C</strong>
-        </button>
+        <button class="btn btn-lg btn-outline-primary sizebtn" onclick="act(5)"><strong>C</strong></button>
         <button class="btn btn-lg btn-info sizebtn" onclick="clicks(0)">0</button>
-        <button class="btn btn-lg btn-primary sizebtn-big" onclick="equl()">=</button>
+        <button class="btn btn-lg btn-primary sizebtn" onclick="equl()">=</button>
+        <button class="btn btn-lg btn-primary sizebtn" onclick="act(4)">-</button>
       </div>
     </div>
 
