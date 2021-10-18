@@ -38,7 +38,7 @@ function act(Y) {
 }
 
 function erase() {
-    dis-0;
+    dis=0;
     temp=0;
     sign=0;
     document.getElementById("display1").innerText=0;
