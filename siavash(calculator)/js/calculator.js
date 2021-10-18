@@ -2,6 +2,7 @@
 
 var dis = document.getElementById("display1").innerText;
 var temp = 0
+var sign =1
 
 function clicks(X) {
     var X;
@@ -34,6 +35,14 @@ function act(Y) {
 
     temp = dis
 
+}
+
+function erase() {
+    dis-0;
+    temp=0;
+    sign=0;
+    document.getElementById("display1").innerText=0;
+    document.getElementById("display2").innerText=0
 }
 
 function show() {
