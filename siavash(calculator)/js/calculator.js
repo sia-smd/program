@@ -1,55 +1,46 @@
 
 
-var dis = document.getElementById("display1").innerText;
-var temp = 0
-var sign =1
+
+
 
 function clicks(X) {
+    debugger
     var X;
-    dis = dis * 10 + X;
-    document.getElementById("display1").innerText = dis;
+    var dis=document.getElementById("display1").value
+    if (dis==0){
+        document.getElementById("display1").value = "";
+        document.getElementById("display1").ariaPlaceholder="0"
+    } 
+    document.getElementById("display1").value=document.getElementById("display1").value+X
+    
 }
 
 function act(Y) {
     var Y;
-    //document.getElementById('display2').innerText = dis
+
     switch (Y) {
         case 1:
-            document.getElementById('display2').innerText = dis
+            document.getElementById("display1").value = "";
+            document.getElementById("display1").ariaPlaceholder="0"
             break;
         case 2:
-
-            break;
-        case 3:
-
-            break;
-        case 4:
-
-            break;
-        case 5:
-            dis = 0
-            document.getElementById("display1").innerText = dis;
+            
+            document.getElementById("display1").innerText = "";
+            document.getElementById("display2").innerText = ""
             break;
 
     }
 
-    temp = dis
-   
+}
+
+
+function Equal() {
+
+    var n = document.getElementById("display1").value
+    
+    document.getElementById("display1").value = eval(n)
 
 }
 
-function erase() {
-    dis=0;
-    temp=0;
-    sign=0;
-    document.getElementById("display1").innerText=0;
-    document.getElementById("display2").innerText=0
-}
 
-function show() {
-    alert(dis)
-}
 
-function change() {
-    alert(temp)
-}
