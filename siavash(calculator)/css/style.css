@@ -1,8 +1,11 @@
 .disp {
   height: 50px;
   width: 100%;
-  
-  
+  text-align: left ;
+}
+.disp_history {
+  height: 66px;
+  width: 100%;
   text-align: left ;
 }
 .sizebtn

@@ -11,9 +11,12 @@
     <p style="text-align: center; font-size: xx-large">Calculator</p>
     <div class="container d-flex">
       <div class=" mx-auto col-4 bg-primary bg-opacity-10 border rounded-3 border-3 border-dark">
-      <div class="mt-1 col-11 mx-auto d-flex flex-column">
-        <div class="text-lg-start disp"><p  id="display2">0</p></div>
-        <div><input style="font-size: 40px;" class="border-0 disp bg-primary bg-opacity-25" type="text" Id="display1" placeholder="0"></div>
+      <div class="mt-3 col-11 mx-auto d-flex flex-column">
+        <div class="text-lg-start disp d-flex">
+          <select id="display2" size="3" class="disp_history border-0  bg-primary bg-opacity-25" multiple>
+          </select>
+        </div>
+        <div class="mt-3 d-flex"><input style="font-size: 40px;" class="border-0 disp bg-primary bg-opacity-25" type="text" Id="display1" placeholder="0"></div>
       </div>
       <div class="mt-1 col-9 mx-auto"> <button class="border-2 sizebtn-big btn btn-lg btn-outline-danger " onclick="act(2)"><strong>CE</strong></button></div>
       <div class=" mt-1 text-center ">
