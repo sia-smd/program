@@ -11,10 +11,10 @@ function clicks(X) {
 
 function act(Y) {
     var Y;
-    document.getElementById('display2').innerText = dis
+    //document.getElementById('display2').innerText = dis
     switch (Y) {
         case 1:
-
+            document.getElementById('display2').innerText = dis
             break;
         case 2:
 
@@ -33,6 +33,7 @@ function act(Y) {
     }
 
     temp = dis
+   
 
 }
 
